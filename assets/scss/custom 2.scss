@@ -1,0 +1,155 @@
+/* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+.subsection-list {
+    margin-bottom: var(--section-separation);
+    overflow-x: auto;
+
+    .article-list--tile {
+        display: flex;
+        padding-bottom: 15px;
+
+        article {
+            width: 200px;  // 修改分类的标签大小
+            height: 50px; 
+            margin-right: 5px; 
+            flex-shrink: 0;
+            // box-shadow: var(--shadow-l2); 
+
+            .article-title {
+                margin: 0;
+                font-size: 1.5rem; 
+                text-align: center;  // 保证字居中美观一点
+            }
+
+            .article-details {
+                padding: 20px;
+                justify-content: center; 
+            }
+        }
+    }
+}
+
+html{
+    ::-webkit-scrollbar {
+      width: 20px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: #d6dee1;
+      border-radius: 20px;
+      border: 6px solid transparent;
+      background-clip: content-box;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #a8bbbf;
+    }
+  }
+
+//  #TableOfContents {
+//    max-height: 75vh;  // 控制目录的最大高度
+//
+//    li {
+//        margin: 15px 20px;  // 控制列表项之间的距离（重要！）
+//        padding: 5px;
+//
+//        & > ol,
+//        & > ul {
+//            margin-top: 10px;  // 控制子列表和父列表项之间的距离（当TOC不只有一层目录的时候有用）
+//            padding-left: 10px;  // 子列表项的向右缩进距离（当TOC不只有一层目录的时候有用）
+//            margin-bottom: -5px;
+//
+//            & > li:last-child {
+//                margin-bottom: 0;
+//            }
+//        }
+//    }
+//}
+
+.widget--toc {
+  // display:inline-block;
+  font-size: 16px;
+
+  #TableOfContents {
+      overflow-x: auto;
+      max-height: 70vh;
+      ol,
+      ul {
+          list-style-type: none;
+          margin: 0; 
+          padding: 0;
+      }
+      // & > ul {
+      //     padding: 0 1em;
+      // }
+      li {
+          margin: 5px 10px;
+          padding: 6px; 
+          & > ol,
+          & > ul {
+              margin-top: 10px;
+              padding-left: 8px;
+              margin-bottom: -5px;
+              & > li:last-child {
+                  margin-bottom: 0;
+              }
+          }
+      }
+  }
+}
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  &.extended {
+      /* range: 768-1024 */
+      @include respond(md) {
+          max-width: 1024px;
+          --left-sidebar-max-width: 25%;
+          --right-sidebar-max-width: 30%;
+      }
+
+      /* range: 1024-1280 */
+      @include respond(lg) {  // 修改主页的三个组件的显示比例
+          max-width: 1280px;
+          --left-sidebar-max-width: 25%;
+          --right-sidebar-max-width: 22%;
+      }
+  }
+
+  &.compact {
+      @include respond(md) {
+          --left-sidebar-max-width: 25%;
+          max-width: 768px;
+      }
+
+      @include respond(lg) {
+          max-width: 1024px;
+          --left-sidebar-max-width: 20%;
+      }
+
+      @include respond(xl) {
+          max-width: 1280px;
+      }
+  }
+}
+
+
+
+.related-contents--wrapper {
+  .related-contents {
+      article {
+          width: 100px;
+          height: 45px;
+          .article-title {
+              font-size: 1.2rem;
+          }
+      }
+  }
+}
+
