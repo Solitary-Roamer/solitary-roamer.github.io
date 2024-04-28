@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='FrontMatter Example title: &amp;#34;How to use hugo to create personal blog&amp;#34; description: &amp;#34;&amp;#34; date: 2021-12-02T13:42:48&#43;08:00 image: https://images.unsplash.com/photo-1593339595642-235dbd27e7f0?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=3868&amp;amp;q=80 license: hidden: false comments: false draft: true categories: [&amp;#34;&amp;#34;] tags: [&amp;#34;tech&amp;#34;,&amp;#34;life&amp;#34;] 如何在本地生成预览网页 在根目录运行下面代码
-hugo server -t hugo-theme-stack --buildDrafts How to post new blogs 在根目录下运行以下代码：
-新建post
-hugo new post/FileName.md push到repo以生成网页
-hugo --theme=hugo-theme-stack -b &amp;#34;https://solitaryroam.github.io/&amp;#34; --buildDrafts cd public git add . git commit -m &amp;#34;commit&amp;#34; git add -u ##if it shows &amp;#39;no changes added to commit ## (use &amp;#34;git add&amp;#34; and/or &amp;#34;git commit -a&amp;#34;) # git add/rm &amp;lt;conflicted_files&amp;gt;&amp;#39; git push -u origin main -u报错时，可用-f替换，强行push'>
-<title>Blog: Hugo stack theme setup and Markdown</title>
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='FrontMatter Example title: &amp;#34;How to use hugo to create personal blog&amp;#34; description: &amp;#34;&amp;#34; date: 2021-12-02T13:42:48&#43;08:00 image: https://images.unsplash.com/photo-1593339595642-235dbd27e7f0?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=3868&amp;amp;q=80 license: hidden: false comments: false draft: true categories: [&amp;#34;&amp;#34;] tags: [&amp;#34;tech&amp;#34;,&amp;#34;life&amp;#34;] Set up the username and email for commits Check your username first
+git config user.name Change to your desired name for the commits (global)
+git config --global user.name your_Name Check your email first
+git config user.email Change to your desired email address for the commits (global)'>
+<title>Hugo: stack theme setup and markdown style</title>
 
-<link rel='canonical' href='http://localhost:1313/p/blog-hugo-stack-theme-setup-and-markdown/'>
+<link rel='canonical' href='https://solitaryroam.github.io/p/hugo-stack-theme-setup-and-markdown-style/'>
 
 <link rel="stylesheet" href="/scss/style.min.a1f49bb3bc1d2f7f70f1e365f1a79a19684ad8f53560772ab6c94a01b7bb4f17.css"><script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -30,21 +29,19 @@ hugo --theme=hugo-theme-stack -b &amp;#34;https://solitaryroam.github.io/&amp;#3
 </script>
 
 
-<meta property='og:title' content='Blog: Hugo stack theme setup and Markdown'>
-<meta property='og:description' content='FrontMatter Example title: &amp;#34;How to use hugo to create personal blog&amp;#34; description: &amp;#34;&amp;#34; date: 2021-12-02T13:42:48&#43;08:00 image: https://images.unsplash.com/photo-1593339595642-235dbd27e7f0?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=3868&amp;amp;q=80 license: hidden: false comments: false draft: true categories: [&amp;#34;&amp;#34;] tags: [&amp;#34;tech&amp;#34;,&amp;#34;life&amp;#34;] 如何在本地生成预览网页 在根目录运行下面代码
-hugo server -t hugo-theme-stack --buildDrafts How to post new blogs 在根目录下运行以下代码：
-新建post
-hugo new post/FileName.md push到repo以生成网页
-hugo --theme=hugo-theme-stack -b &amp;#34;https://solitaryroam.github.io/&amp;#34; --buildDrafts cd public git add . git commit -m &amp;#34;commit&amp;#34; git add -u ##if it shows &amp;#39;no changes added to commit ## (use &amp;#34;git add&amp;#34; and/or &amp;#34;git commit -a&amp;#34;) # git add/rm &amp;lt;conflicted_files&amp;gt;&amp;#39; git push -u origin main -u报错时，可用-f替换，强行push'>
-<meta property='og:url' content='http://localhost:1313/p/blog-hugo-stack-theme-setup-and-markdown/'>
+<meta property='og:title' content='Hugo: stack theme setup and markdown style'>
+<meta property='og:description' content='FrontMatter Example title: &amp;#34;How to use hugo to create personal blog&amp;#34; description: &amp;#34;&amp;#34; date: 2021-12-02T13:42:48&#43;08:00 image: https://images.unsplash.com/photo-1593339595642-235dbd27e7f0?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=3868&amp;amp;q=80 license: hidden: false comments: false draft: true categories: [&amp;#34;&amp;#34;] tags: [&amp;#34;tech&amp;#34;,&amp;#34;life&amp;#34;] Set up the username and email for commits Check your username first
+git config user.name Change to your desired name for the commits (global)
+git config --global user.name your_Name Check your email first
+git config user.email Change to your desired email address for the commits (global)'>
+<meta property='og:url' content='https://solitaryroam.github.io/p/hugo-stack-theme-setup-and-markdown-style/'>
 <meta property='og:site_name' content='沉郁'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Tech' /><meta property='article:tag' content='' /><meta property='article:published_time' content='2023-03-06T22:41:53&#43;03:00'/><meta property='article:modified_time' content='2023-03-06T22:41:53&#43;03:00'/>
-<meta name="twitter:title" content="Blog: Hugo stack theme setup and Markdown">
-<meta name="twitter:description" content="FrontMatter Example title: &amp;#34;How to use hugo to create personal blog&amp;#34; description: &amp;#34;&amp;#34; date: 2021-12-02T13:42:48&#43;08:00 image: https://images.unsplash.com/photo-1593339595642-235dbd27e7f0?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=3868&amp;amp;q=80 license: hidden: false comments: false draft: true categories: [&amp;#34;&amp;#34;] tags: [&amp;#34;tech&amp;#34;,&amp;#34;life&amp;#34;] 如何在本地生成预览网页 在根目录运行下面代码
-hugo server -t hugo-theme-stack --buildDrafts How to post new blogs 在根目录下运行以下代码：
-新建post
-hugo new post/FileName.md push到repo以生成网页
-hugo --theme=hugo-theme-stack -b &amp;#34;https://solitaryroam.github.io/&amp;#34; --buildDrafts cd public git add . git commit -m &amp;#34;commit&amp;#34; git add -u ##if it shows &amp;#39;no changes added to commit ## (use &amp;#34;git add&amp;#34; and/or &amp;#34;git commit -a&amp;#34;) # git add/rm &amp;lt;conflicted_files&amp;gt;&amp;#39; git push -u origin main -u报错时，可用-f替换，强行push">
+<meta name="twitter:title" content="Hugo: stack theme setup and markdown style">
+<meta name="twitter:description" content="FrontMatter Example title: &amp;#34;How to use hugo to create personal blog&amp;#34; description: &amp;#34;&amp;#34; date: 2021-12-02T13:42:48&#43;08:00 image: https://images.unsplash.com/photo-1593339595642-235dbd27e7f0?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=3868&amp;amp;q=80 license: hidden: false comments: false draft: true categories: [&amp;#34;&amp;#34;] tags: [&amp;#34;tech&amp;#34;,&amp;#34;life&amp;#34;] Set up the username and email for commits Check your username first
+git config user.name Change to your desired name for the commits (global)
+git config --global user.name your_Name Check your email first
+git config user.email Change to your desired email address for the commits (global)">
     <link rel="shortcut icon" href="/images/yu.png" />
 
   
@@ -256,6 +253,7 @@ hugo --theme=hugo-theme-stack -b &amp;#34;https://solitaryroam.github.io/&amp;#3
             <nav id="TableOfContents">
   <ol>
     <li><a href="#frontmatter-example">FrontMatter Example</a></li>
+    <li><a href="#set-up-the-username-and-email-for-commits">Set up the username and email for commits</a></li>
     <li><a href="#如何在本地生成预览网页">如何在本地生成预览网页</a></li>
     <li><a href="#how-to-post-new-blogs">How to post new blogs</a></li>
     <li><a href="#how-to-use-links-in-articles-end">How to use links in article&rsquo;s end</a></li>
@@ -307,7 +305,7 @@ hugo --theme=hugo-theme-stack -b &amp;#34;https://solitaryroam.github.io/&amp;#3
     
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/blog-hugo-stack-theme-setup-and-markdown/">Blog: Hugo stack theme setup and Markdown</a>
+            <a href="/p/hugo-stack-theme-setup-and-markdown-style/">Hugo: stack theme setup and markdown style</a>
         </h2>
     
         
@@ -362,6 +360,15 @@ hugo --theme=hugo-theme-stack -b &amp;#34;https://solitaryroam.github.io/&amp;#3
 </span></span><span class="line"><span class="cl"><span class="n">draft</span><span class="p">:</span> <span class="n">true</span> 
 </span></span><span class="line"><span class="cl"><span class="n">categories</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;&#34;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="n">tags</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;tech&#34;</span><span class="p">,</span><span class="s2">&#34;life&#34;</span><span class="p">]</span>
+</span></span></code></pre></div><h2 id="set-up-the-username-and-email-for-commits">Set up the username and email for commits</h2>
+<p>Check your username first</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span>
+</span></span></code></pre></div><p>Change to your desired name for the commits (global)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="n">your_Name</span>
+</span></span></code></pre></div><p>Check your email first</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span>
+</span></span></code></pre></div><p>Change to your desired email address for the commits (global)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="n">your_email</span><span class="nd">@example.com</span>
 </span></span></code></pre></div><h2 id="如何在本地生成预览网页">如何在本地生成预览网页</h2>
 <p><strong>在根目录运行下面代码</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">hugo</span> <span class="n">server</span> <span class="o">-</span><span class="n">t</span> <span class="n">hugo</span><span class="o">-</span><span class="n">theme</span><span class="o">-</span><span class="n">stack</span> <span class="o">--</span><span class="n">buildDrafts</span> 
