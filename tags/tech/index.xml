@@ -140,7 +140,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push -f origin main
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;上面最后一行&lt;code&gt;git push -f origin main&lt;/code&gt;为强制执行，可在出现 failed to push some refs to Error: failed to push some refs to 时操作&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;若出现&lt;code&gt;fatal: Authentication failed for &#39;https://github.com/solitary-roamer/solitary-roamer.github.io.git/&#39;&lt;/code&gt;，可用获取&lt;code&gt;Personal token&lt;/code&gt;的方式解决（&lt;a class=&#34;link&#34; href=&#34;https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;若出现&lt;code&gt;fatal: Authentication failed for &#39;https://github.com/solitary-roamer/solitary-roamer.github.io.git/&#39;&lt;/code&gt;，可用获取&lt;code&gt;Personal token&lt;/code&gt;的方式解决（&lt;a class=&#34;link&#34; href=&#34;https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8&#34;  target=&#34;_self&#34; rel=&#34;noopener&#34;
     &gt;看这里&lt;/a&gt;）&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;other-possible-solutions-remember-to-try-this&#34;&gt;Other possible solutions (Remember to try this!)&lt;/h2&gt;
@@ -194,7 +194,7 @@
 &lt;h4 id=&#34;picgo配置&#34;&gt;PicGo配置&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;PicGo下载：安装好Homebrew后，直接用命令行&lt;code&gt;brew install picgo --cask&lt;/code&gt;即可安装&lt;/li&gt;
-&lt;li&gt;软件设置：&lt;a class=&#34;link&#34; href=&#34;https://picgo.github.io/PicGo-Doc/zh/guide/config.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;软件设置：&lt;a class=&#34;link&#34; href=&#34;https://picgo.github.io/PicGo-Doc/zh/guide/config.html&#34;  target=&#34;_self&#34; rel=&#34;noopener&#34;
     &gt;点击这里&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;macOS中，PicGo会出现在顶边栏，直接拖拽图片到图标中即可上传，之后即可粘贴到markdown文件中（也可以直接上传剪切板中的文件）。注意：若要连续上传，需要在两张图片之间有空格。&lt;/li&gt;
 &lt;/ol&gt;
