@@ -111,9 +111,9 @@ But if you don’t, it’s ok. Don’t push yourself. You will also get there in
     </script><script>
     (function() {
         const colorSchemeKey = 'StackColorScheme';
-        const isLocalPreview = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+        const defaultColorScheme = "auto";
 
-        if (isLocalPreview) {
+        if (defaultColorScheme === 'auto') {
             localStorage.setItem(colorSchemeKey, 'auto');
         }
 

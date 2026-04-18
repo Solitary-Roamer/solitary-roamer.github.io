@@ -81,9 +81,9 @@ S12中，两个人都慢慢打开心扉，进行了一次深刻的交流，但�
     </script><script>
     (function() {
         const colorSchemeKey = 'StackColorScheme';
-        const isLocalPreview = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+        const defaultColorScheme = "auto";
 
-        if (isLocalPreview) {
+        if (defaultColorScheme === 'auto') {
             localStorage.setItem(colorSchemeKey, 'auto');
         }
 

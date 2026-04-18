@@ -90,9 +90,9 @@ PS：本故事来源于加缪的《局外人》，与原著略有出入。">
     </script><script>
     (function() {
         const colorSchemeKey = 'StackColorScheme';
-        const isLocalPreview = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+        const defaultColorScheme = "auto";
 
-        if (isLocalPreview) {
+        if (defaultColorScheme === 'auto') {
             localStorage.setItem(colorSchemeKey, 'auto');
         }
 

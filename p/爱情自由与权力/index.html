@@ -102,9 +102,9 @@ PS：想着这些的时候，耳边吹过一阵寒风。你突然意识到，所
     </script><script>
     (function() {
         const colorSchemeKey = 'StackColorScheme';
-        const isLocalPreview = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+        const defaultColorScheme = "auto";
 
-        if (isLocalPreview) {
+        if (defaultColorScheme === 'auto') {
             localStorage.setItem(colorSchemeKey, 'auto');
         }
 
