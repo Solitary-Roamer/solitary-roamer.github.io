@@ -97,9 +97,14 @@ https://epaper.gmw.cn/gmrb/html/2016-08/06/nw.D110000gmrb_20160806_1-12.htm ">
     (function() {
         const colorSchemeKey = 'StackColorScheme';
         const defaultColorScheme = "auto";
+        const colorSchemeVersionKey = 'StackColorSchemeVersion';
+        const colorSchemeVersion = '2';
 
-        if (defaultColorScheme === 'auto') {
+        if (defaultColorScheme === 'auto' && localStorage.getItem(colorSchemeVersionKey) !== colorSchemeVersion) {
             localStorage.setItem(colorSchemeKey, 'auto');
+            localStorage.setItem(colorSchemeVersionKey, colorSchemeVersion);
+        } else if (!localStorage.getItem(colorSchemeKey)) {
+            localStorage.setItem(colorSchemeKey, defaultColorScheme);
         }
 
         const colorSchemeItem = localStorage.getItem(colorSchemeKey);

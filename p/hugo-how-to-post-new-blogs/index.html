@@ -82,9 +82,14 @@ hugo --theme=hugo-theme-stack -b &amp;#34;https://solitary-roamer.github.io/&amp
     (function() {
         const colorSchemeKey = 'StackColorScheme';
         const defaultColorScheme = "auto";
+        const colorSchemeVersionKey = 'StackColorSchemeVersion';
+        const colorSchemeVersion = '2';
 
-        if (defaultColorScheme === 'auto') {
+        if (defaultColorScheme === 'auto' && localStorage.getItem(colorSchemeVersionKey) !== colorSchemeVersion) {
             localStorage.setItem(colorSchemeKey, 'auto');
+            localStorage.setItem(colorSchemeVersionKey, colorSchemeVersion);
+        } else if (!localStorage.getItem(colorSchemeKey)) {
+            localStorage.setItem(colorSchemeKey, defaultColorScheme);
         }
 
         const colorSchemeItem = localStorage.getItem(colorSchemeKey);
