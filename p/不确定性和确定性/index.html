@@ -93,6 +93,12 @@ PS：不知为何，最近常常想，如果现在身上没有了那份冲劲，
     </script><script>
     (function() {
         const colorSchemeKey = 'StackColorScheme';
+        const isLocalPreview = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+
+        if (isLocalPreview) {
+            localStorage.setItem(colorSchemeKey, 'auto');
+        }
+
         const colorSchemeItem = localStorage.getItem(colorSchemeKey);
         const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 

@@ -96,6 +96,12 @@ https://epaper.gmw.cn/gmrb/html/2016-08/06/nw.D110000gmrb_20160806_1-12.htm ">
     </script><script>
     (function() {
         const colorSchemeKey = 'StackColorScheme';
+        const isLocalPreview = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+
+        if (isLocalPreview) {
+            localStorage.setItem(colorSchemeKey, 'auto');
+        }
+
         const colorSchemeItem = localStorage.getItem(colorSchemeKey);
         const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
